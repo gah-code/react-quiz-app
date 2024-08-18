@@ -1,5 +1,7 @@
 # React Quiz App
 
+![Design preview for the Manage landing page coding challenge](./src/design/quiz-app-ui.png)
+
 A simple quiz application built with React and JSON Server. This project allows users to take quizzes and see their results. It is designed to be easy to set up and extend.
 
 ## Table of Contents
