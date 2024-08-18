@@ -3,7 +3,7 @@ import React from 'react';
 const Options = ({ question, dispatch, answer }) => {
   const hasAnswered = answer !== null;
   return (
-    <div className='option'>
+    <div className='options'>
       {question.options.map((option, index) => (
         <button
           className={`btn btn-option ${index === answer ? 'answer' : ''} ${

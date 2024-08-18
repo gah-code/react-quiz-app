@@ -5,7 +5,7 @@ function Question({ question, dispatch, answer }) {
   // const { questions, index } = useQuiz();
   // const question = questions.at(index);
 
-  console.log(question);
+  // console.log(question);
 
   return (
     <div>
