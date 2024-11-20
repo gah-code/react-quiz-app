@@ -1,7 +1,10 @@
-import React from 'react';
+import { useQuiz } from '../contexts/QuizContext';
 
-const Options = ({ question, dispatch, answer }) => {
+function Options({ question }) {
+  const { dispatch, answer } = useQuiz();
+
   const hasAnswered = answer !== null;
+
   return (
     <div className='options'>
       {question.options.map((option, index) => (
@@ -22,6 +25,6 @@ const Options = ({ question, dispatch, answer }) => {
       ))}
     </div>
   );
-};
+}
 
 export default Options;

@@ -19,6 +19,17 @@
       "points": 10
     },
     {
+      "question": "What is the key difference between `useEffect` and `useLayoutEffect`?",
+      "options": [
+        "`useEffect` runs after the render phase, while `useLayoutEffect` runs synchronously after DOM mutations.",
+        "`useEffect` is used for animations, while `useLayoutEffect` is used for data fetching.",
+        "`useEffect` works only with functional components, while `useLayoutEffect` works with both functional and class components.",
+        "`useEffect` always runs before `useLayoutEffect` during the same render."
+      ],
+      "correctOption": 0,
+      "points": 30
+    },
+    {
       "question": "What's the name of the syntax we use to describe the UI in React components?",
       "options": ["FBJ", "Babel", "JSX", "ES2015"],
       "correctOption": 2,
@@ -53,6 +64,17 @@
       "points": 30
     },
     {
+      "question": "When using `React.createContext`, how can you provide a default value to the context?",
+      "options": [
+        "By passing the default value to the `Provider` component",
+        "By passing the default value as an argument to `createContext`",
+        "By assigning a value directly to the context variable",
+        "By using `useState` inside the context definition"
+      ],
+      "correctOption": 1,
+      "points": 20
+    },
+    {
       "question": "What triggers a UI re-render in React?",
       "options": [
         "Running an effect",
@@ -84,6 +106,28 @@
       ],
       "correctOption": 3,
       "points": 30
+    },
+    {
+      "question": "How does `React.memo` optimize performance?",
+      "options": [
+        "By skipping re-renders of a component if its props haven't changed",
+        "By preventing the use of unnecessary hooks",
+        "By batching multiple state updates into a single re-render",
+        "By memoizing the return value of a functional component"
+      ],
+      "correctOption": 0,
+      "points": 25
+    },
+    {
+      "question": "How does `React.lazy` improve performance in React applications?",
+      "options": [
+        "By memoizing components based on their props",
+        "By splitting the application into smaller chunks for lazy loading",
+        "By preventing unnecessary re-renders",
+        "By deferring state updates until the next render cycle"
+      ],
+      "correctOption": 1,
+      "points": 25
     },
     {
       "question": "If we pass a function to useState, when will that function be called?",
@@ -125,6 +169,28 @@
       "points": 30
     },
     {
+      "question": "What happens if you update the state of a component within `useEffect` without specifying a dependency array?",
+      "options": [
+        "The state update is ignored",
+        "The component goes into an infinite re-render loop",
+        "The effect runs only once",
+        "The effect does not run at all"
+      ],
+      "correctOption": 1,
+      "points": 25
+    },
+    {
+      "question": "Which of the following statements about the `useReducer` hook is TRUE?",
+      "options": [
+        "It is primarily used to manage global state in React applications.",
+        "It accepts a reducer function and an initial state as arguments.",
+        "It always requires a middleware for dispatching actions.",
+        "It can only be used in conjunction with the Context API."
+      ],
+      "correctOption": 1,
+      "points": 30
+    },
+    {
       "question": "When will an effect run if it doesn't have a dependency array?",
       "options": [
         "Only when the component mounts",
@@ -133,6 +199,50 @@
         "Each time the component is re-rendered"
       ],
       "correctOption": 3,
+      "points": 20
+    },
+    {
+      "question": "Which of the following is NOT a valid way to pass props to a child component?",
+      "options": [
+        "As attributes in JSX",
+        "Using the Context API",
+        "Directly modifying the child's `props` object",
+        "By spreading an object containing key-value pairs as attributes"
+      ],
+      "correctOption": 2,
+      "points": 20
+    },
+    {
+      "question": "What is the primary purpose of React's `useMemo` hook?",
+      "options": [
+        "To memoize the result of an expensive calculation",
+        "To memoize component props",
+        "To manage side effects in functional components",
+        "To create an immutable value reference"
+      ],
+      "correctOption": 0,
+      "points": 20
+    },
+    {
+      "question": "What will happen if a dependency is missing from the dependency array of a `useEffect` hook?",
+      "options": [
+        "The effect will not run at all.",
+        "The effect will only run once during the initial render.",
+        "The effect might use stale values, leading to potential bugs.",
+        "The effect will throw a runtime error."
+      ],
+      "correctOption": 2,
+      "points": 30
+    },
+    {
+      "question": "What is the behavior of a React component wrapped in `React.StrictMode`?",
+      "options": [
+        "It enables rendering optimization by React.",
+        "It prevents state updates during the initial render phase.",
+        "It runs additional checks and warnings for child components in development mode.",
+        "It automatically manages side effects of child components."
+      ],
+      "correctOption": 2,
       "points": 20
     }
   ]

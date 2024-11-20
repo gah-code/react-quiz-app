@@ -45,6 +45,8 @@ react-quiz-app/
 ├── src/
 │   ├── components/
 │   │   ├── App.js
+│   │   ├── Error.js
+│   │   ├── FinishScreen.js
 │   │   ├── Header.js
 │   │   ├── Loader.js
 │   │   ├── Main.js
